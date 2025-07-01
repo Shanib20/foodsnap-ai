@@ -36,7 +36,8 @@ const FoodAnalysis = () => {
     formData.append('image', selectedFile);
 
     try {
-      const response = await fetch('http://127.0.0.1:3000/analyze-food', {
+      const BACKEND_BASE_URL = 'https://snapthefood.onrender.com';
+      const response = await fetch(`${BACKEND_BASE_URL}/analyze-food`,{
         method: 'POST',
         body: formData,
       });

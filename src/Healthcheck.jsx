@@ -34,7 +34,8 @@ const HealthCheck = () => {
     formData.append('image', selectedFile);
 
     try {
-      const response = await fetch('http://127.0.0.1:3000/health-check', {
+      const BACKEND_BASE_URL = 'https://snapthefood.onrender.com';
+       const response = await fetch(`${BACKEND_BASE_URL}/health-check`, {
         method: 'POST',
         body: formData,
       });
