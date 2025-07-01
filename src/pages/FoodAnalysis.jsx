@@ -38,10 +38,9 @@ const FoodAnalysis = () => {
     try {
       const BACKEND_BASE_URL = 'https://snapthefood.onrender.com';
       const response = await fetch(`${BACKEND_BASE_URL}/analyze-food`, {
-        method: 'POST',
-        body: formData,
+      method: 'POST',
+      body: formData,
       });
-
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(`HTTP error! Status: ${response.status}, Message: ${errorData.error}`);
@@ -91,10 +90,8 @@ const FoodAnalysis = () => {
             <Camera className="h-12 w-12 text-white" />
           </div>
         </div>
-        {/* Responsive text size for h1 */}
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">AI Food Analysis</h1>
-        {/* Responsive text size for paragraph */}
-        <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        <h1 className="text-5xl font-bold text-gray-900 mb-6">AI Food Analysis</h1>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
           Upload or capture a photo of your meal to get instant, detailed nutritional analysis powered by advanced AI
         </p>
       </div>
