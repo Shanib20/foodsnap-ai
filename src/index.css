@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Custom Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* Starts slightly below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Ends at its original position */
+  }
+}
+
+.fade-in-section {
+  animation: fadeIn 0.5s ease-out forwards; /* 0.5 seconds duration, ease-out timing, retains final state */
+}
