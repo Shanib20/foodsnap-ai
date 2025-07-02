@@ -82,10 +82,7 @@ const Home = () => {
                   <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 
-                <button className="group inline-flex items-center justify-center px-10 py-5 border-2 border-gray-300 text-gray-700 font-bold rounded-2xl hover:border-emerald-500 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-300 shadow-lg hover:shadow-xl">
-                  <Play className="mr-3 h-6 w-6 group-hover:scale-110 transition-transform" />
-                  Watch Demo
-                </button>
+
               </div>
 
               <div className="grid grid-cols-3 gap-6 pt-6">

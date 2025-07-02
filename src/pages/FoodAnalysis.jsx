@@ -173,12 +173,12 @@ const FoodAnalysis = () => {
               {isAnalyzing ? (
                 <>
                   <Loader className="mr-3 h-6 w-6 animate-spin" />
-                  Analyzing Magic in Progress...
+                  Analyzing in Progress...
                 </>
               ) : (
                 <>
                   <Zap className="mr-3 h-6 w-6 group-hover:animate-pulse" />
-                  Analyze with AI
+                  Analyze 
                 </>
               )}
             </button>
